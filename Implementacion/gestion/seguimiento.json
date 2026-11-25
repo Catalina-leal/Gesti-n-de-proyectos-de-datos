@@ -1,0 +1,208 @@
+{
+  "corte": "25-11-2026",
+  "base": "Evaluación 2, pp. 5–8. Las semanas corresponden al cronograma base. Las fechas del tablero registran evidencia de esta entrega y no prueban el cumplimiento histórico de cada semana.",
+  "tareas": [
+    [
+      "T01",
+      "2.0 / H1",
+      "S1–S2",
+      "Líder",
+      "Documentar necesidades y alcance",
+      "Verificado",
+      "Requerimientos MoSCoW y alcance documentados en E2. La aprobación del sponsor sigue pendiente.",
+      "Evaluación 2, pp. 3–5",
+      ""
+    ],
+    [
+      "T02",
+      "3.1 / H2",
+      "S3–S4",
+      "Analista de datos",
+      "Obtener fuente de datos",
+      "Contingencia",
+      "Se obtuvo el CSV UCI. Se activa el plan alternativo previsto para facturas detalladas.",
+      "../datos/wholesale.csv",
+      "Solicitar facturas fechadas a Informática antes de evaluar frecuencia."
+    ],
+    [
+      "T03",
+      "3.2 / H2",
+      "S3–S4",
+      "Analista de datos",
+      "Diagnosticar calidad y cobertura",
+      "Verificado",
+      "Control de esquema, nulos, duplicados, códigos, negativos y atípicos ejecutado.",
+      "../resultados/calidad.json",
+      ""
+    ],
+    [
+      "T04",
+      "3.3–3.4 / H3",
+      "S5–S7",
+      "Analista de datos",
+      "Preparar la base limpia D2",
+      "Verificado",
+      "Se registran extremos IQR y se conservan filas válidas. ID de fila estable para la misma fuente.",
+      "../resultados/base_limpia.csv",
+      ""
+    ],
+    [
+      "T05",
+      "4.1–4.2 / H4",
+      "S8–S9",
+      "Científico de datos",
+      "Comparar agrupaciones",
+      "Verificado",
+      "K-means k=2–6 y sensibilidad a semillas. Se guardó y recargó el modelo.",
+      "../resultados/comparacion_k.csv",
+      ""
+    ],
+    [
+      "T06",
+      "4.3–4.4 / H4",
+      "S8–S9",
+      "Científico de datos",
+      "Caracterizar perfiles y auditar grupos",
+      "Verificado",
+      "Medianas por perfil y cruces por canal y región para revisar composición.",
+      "../resultados/perfiles.csv",
+      ""
+    ],
+    [
+      "T07",
+      "5.0 / H5",
+      "S10",
+      "Líder y usuarios",
+      "Validar con Bodega, Logística y Ventas",
+      "Pendiente",
+      "Por validar utilidad, comprensión y efectos sobre el servicio mediante casos operativos.",
+      "Informe de la Evaluación 3 (paquete académico)",
+      "Líder recoge actas con casos y ajustes. Sponsor confirma aceptación."
+    ],
+    [
+      "T08",
+      "6.1 / H6",
+      "S11–S12",
+      "Líder",
+      "Entregar diagnóstico y perfiles D1",
+      "Verificado",
+      "Informe académico y resultados preparados para revisión.",
+      "Informe de la Evaluación 3 (paquete académico)",
+      ""
+    ],
+    [
+      "T09",
+      "6.3 / H6",
+      "S11–S12",
+      "Líder y equipo",
+      "Entregar modelo y guía D3",
+      "Parcial",
+      "Modelo funcional y sugerencias orientativas. Falta validación operativa de la guía.",
+      "Informe de la Evaluación 3 (paquete académico)",
+      "Validar guía con usuarios cuando se disponga de casos recientes."
+    ],
+    [
+      "T10",
+      "6.4 / H6",
+      "S11–S12",
+      "Líder y equipo",
+      "Preparar presentación de entrega",
+      "Verificado",
+      "Diapositivas y notas para demostrar el pipeline y el tablero.",
+      "Presentación de la Evaluación 3 (paquete académico)",
+      ""
+    ],
+    [
+      "T11",
+      "RF3 / H6",
+      "S11–S12",
+      "Informática y líder",
+      "Evaluar panel de segmentos opcional",
+      "Postergado",
+      "Se entregan CSV de consulta. El tablero corresponde al seguimiento del proyecto.",
+      "../resultados/clientes_segmentados.csv",
+      "Reevaluar RF3 con usuarios después de H5."
+    ],
+    [
+      "T12",
+      "1.0 / H6",
+      "S1–S12",
+      "Líder",
+      "Registrar seguimiento y control",
+      "Verificado",
+      "Cortes de evidencia, responsables, decisiones y dependencias registrados en el tablero.",
+      "tablero.html",
+      "Mantener seguimiento semanal y revisión quincenal en el piloto."
+    ],
+    [
+      "T13",
+      "H6",
+      "S12",
+      "Sponsor",
+      "Obtener aceptación de D1, D2 y D3",
+      "Pendiente",
+      "Paquete técnico listo para revisión académica. Falta aceptación del sponsor.",
+      "Informe de la Evaluación 3 (paquete académico)",
+      "Formalizar aceptación después de la validación de usuarios."
+    ]
+  ],
+  "reportes": [
+    [
+      "C1",
+      "Preparación de datos",
+      "CSV anual localizado y validado. Se activó RP1 al trabajar sin facturas fechadas. Se conservó la base anual para completar el diagnóstico y D2."
+    ],
+    [
+      "C2",
+      "Modelamiento",
+      "Se ejecutaron cinco configuraciones de K-means, auditoría de composición y verificación de predicción con el modelo recargado. RP3 sigue abierto para validación externa."
+    ],
+    [
+      "C3",
+      "Revisión de entrega",
+      "Paquete académico y evidencia de gestión listos. H5 y aceptación de H6 pendientes. RF3 se postergó para concentrar el trabajo en D1–D3."
+    ]
+  ],
+  "desviaciones": [
+    [
+      "DV1 / RP1",
+      "Facturas fechadas ausentes",
+      "Datos · S3–S7",
+      "Usar gastos anuales y excluir estimaciones de frecuencia. Contingencia aplicada.",
+      "Analista de datos / Informática",
+      "Solicitar muestra fechada y validar cobertura antes de ampliar el alcance."
+    ],
+    [
+      "DV2 / RP3",
+      "Separación baja de los grupos",
+      "Modelo · S8–S10",
+      "Comparar k=2–6 y medir estabilidad ante semillas. Conservar revisión humana.",
+      "Científico de datos",
+      "Probar estabilidad con compras recientes y revisar casos de frontera con usuarios."
+    ],
+    [
+      "DV3 / RP6",
+      "Composición desigual por canal y región",
+      "Evaluación · S10",
+      "Auditar composición y mantener canal y región fuera del entrenamiento.",
+      "Calidad y Normativa",
+      "Comparar cobertura, quiebres, entregas y reclamos antes de modificar servicio."
+    ],
+    [
+      "DV4 / RP4",
+      "Validación de usuarios y sponsor pendiente",
+      "Cierre · S10–S12",
+      "Mantener abiertas H5 y la aceptación de H6. Preparar guía de revisión y propuestas orientativas.",
+      "Líder y sponsor",
+      "Levantar acta de validación y aceptación de D1–D3."
+    ],
+    [
+      "DV5 / RF3",
+      "Panel de segmentos postergado",
+      "Entrega · S11–S12",
+      "Usar CSV de consulta para proteger los entregables principales.",
+      "Líder / Informática",
+      "Revalorar la necesidad del panel tras H5."
+    ]
+  ]
+}

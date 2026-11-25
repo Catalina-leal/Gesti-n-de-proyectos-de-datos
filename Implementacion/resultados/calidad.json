@@ -1,0 +1,23 @@
+{
+  "filas": 440,
+  "columnas": 8,
+  "nulos": 0,
+  "duplicados": 0,
+  "negativos": 0,
+  "no_finitos": 0,
+  "codigos_invalidos": 0,
+  "atipicos": 108,
+  "sha256": "c3d018c643565b85cee733c4a2ac76dd76e080e857cb23f0ccfcc2e15a6c17ef",
+  "version": "1.0",
+  "k": 2,
+  "silhouette": 0.2903284869973543,
+  "asignados": 440,
+  "ari_min": 1.0,
+  "python": "3.12.14",
+  "sklearn": "1.9.1",
+  "pandas": "3.0.1",
+  "numpy": "2.5.5",
+  "prediccion_verificada": true,
+  "segundos": 0.564,
+  "ejecucion": "2026-11-25T08:10:26-03:00"
+}
